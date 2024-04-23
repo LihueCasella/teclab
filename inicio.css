@@ -1,0 +1,176 @@
+/* Estilos para el header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #00d9ff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.instagram-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.instagram-btn:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el botón "Explorar Productos" */
+.dropbtn {
+  background-color: #00d9ff; /* Mismo color que el header */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto; /* Centro horizontal y espacio en la parte superior */
+  width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+.dropbtn:hover {
+  background-color: #008fb3; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para la lista desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo traslúcido */
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos para el carrito de compras */
+.carrito-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#carrito-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 220px; /* Ajustes del ancho del recuadro del ''carrito'' */
+  z-index: 1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  right: 0; /* Ajuste hacia la derecha */
+}
+
+.carrito-dropdown:hover #carrito-dropdown-content {
+  display: block;
+  right: 0; /* Ajuste hacia la derecha */
+  left: auto; /* Ajuste a la posición inicial */
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-carrito li {
+  margin-bottom: 10px;
+  color: #000; /* Color de texto negro */
+}
+
+#total {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #000; /* Color de texto negro */
+}
+
+.carrito-buttons {
+  margin-top: 10px;
+}
+
+#ver-carrito-btn {
+  background-color: #00d9ff; /* Color similar al del encabezado */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s; /* Animación de sombreado */
+}
+
+#ver-carrito-btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombreado al hacer hover */
+}
+
+/* Estilos para los botones dentro del contenido del carrito */
+#carrito-dropdown-content button {
+  background-color: #00d9ff; /* para que tenga color similar al del encabezado */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s; /* Animación de sombreado */
+  margin-top: 10px; /* Espaciado entre productos */
+}
+
+#carrito-dropdown-content button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombreado al hacer hover */
+}

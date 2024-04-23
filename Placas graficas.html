@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarjeta Gráfica - Tienda de Tecnología</title>
+    <link rel="stylesheet" href="grafica.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1 class="logo">Tienda de Tecnología</h1>
+        <nav>
+          <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+          </ul>
+        </nav>
+        <div class="carrito-dropdown">
+          <button id="ver-carrito-btn">Ver Carrito</button>
+          <div id="carrito-dropdown-content">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p id="total">Total: $0.00</p>
+            <!-- Mostrar el total -->
+            <div class="carrito-buttons">
+              <button id="vaciar-carrito">Vaciar Carrito</button>
+              <button id="ir-a-pagos">Ir a Pagos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="product">
+        <h2>Rtx 3080 TI</h2>
+        <img src="recursos/grafica.jpg" alt="Rtx 3080 TI" class="grafica" />
+        <p class="descripcion">
+          La tarjeta gráfica EVGA GeForce RTX 3080 Ti FTW3 ULTRA es reconocida
+          por su impresionante rendimiento, capaz de manejar juegos en ultra a
+          2K y 4K con altas tasas de FPS. Los usuarios destacan su potencia para
+          renderizados con motores 3D y su capacidad para el overclocking. A
+          pesar de su tamaño considerable y la necesidad de una buena
+          refrigeración, la tarjeta es valorada por su calidad de ensamblaje y
+          diseño con RGB. La robustez y la calidad de los componentes son
+          también puntos fuertes mencionados por los usuarios..
+        </p>
+        <p>Precio: $1000.00</p>
+        <button
+          class="agregar-carrito-btn"
+          data-nombre="Rtx 3080 TI"
+          data-precio="1000.00"
+        >
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Tienda de Tecnología. Todos los derechos reservados.</p>
+    </footer>
+    <script src="carrito.js"></script>
+  </body>
+</html>

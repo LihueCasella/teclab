@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Procesador - Tienda de Tecnología</title>
+    <link rel="stylesheet" href="Procesadores.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1 class="logo">Tienda de Tecnología</h1>
+        <nav>
+          <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+          </ul>
+        </nav>
+        <div class="carrito-dropdown">
+          <button id="ver-carrito-btn">Ver Carrito</button>
+          <div id="carrito-dropdown-content">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p id="total">Total: $0.00</p>
+            <!-- Mostrar el total -->
+            <div class="carrito-buttons">
+              <button id="vaciar-carrito">Vaciar Carrito</button>
+              <button id="ir-a-pagos">Ir a Pagos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="product">
+        <h2>Intel Core i9-12900KS 3.4 GHz</h2>
+        <img
+          src="recursos/procesador.jpg"
+          alt="Intel Core i9-12900KS"
+          class="procesador"
+        />
+        <p class="descripcion">
+          Este procesador ha recibido excelentes valoraciones por su potencia y
+          calidad. Los usuarios destacan su rendimiento óptimo en tareas de
+          edición de imagen, ingeniería en 3D y virtualización de sistemas. Se
+          menciona que es una de las mejores CPUs disponibles, ideal para
+          combinarse con una buena GPU. Además, se aprecia su estabilidad y
+          capacidad para mantener temperaturas controladas incluso bajo
+          exigencias altas.
+        </p>
+        <p>Precio: $150.00</p>
+        <button
+          class="agregar-carrito-btn"
+          data-nombre="Procesador"
+          data-precio="150.00"
+        >
+          Añadir al carrito
+        </button>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Tienda de Tecnología. Todos los derechos reservados.</p>
+    </footer>
+    <script src="carrito.js"></script>
+  </body>
+</html>
