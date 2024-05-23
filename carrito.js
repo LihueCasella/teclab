@@ -66,19 +66,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // Cargar carrito desde el localStorage al cargar la página
     cargarCarritoDesdeLocalStorage();
     
-const mp = new MercadoPago('YOUR_APP_USR-705b5d90-9931-4024-bfb8-74a7c1676008');
-const bricksBuilder = mp.bricks();
+    // Manejar el evento de clic en el botón "Pagar con Mercado Pago"
+    document.getElementById("ir-a-pagos").addEventListener("click", function() {
+        // Configura tu preferencia de pago con Mercado Pago
+        var preference = {
+            items: [
+                {
+                    title: 'Producto',
+                    unit_price: 100.00,
+                    quantity: 1
+                }
+            ]
+        };
 
-mp.bricks().create("wallet", "wallet_container", {
-    initialization: {
-        preferenceId: "<PREFERENCE_ID>",
-    },
- customization: {
-  texts: {
-   valueProp: 'smart_option',
-  },
-  },
- });
- 
-
+        // Crea una preferencia de pago utilizando el SDK de Mercado Pago
+        fetch('https://api.mercadopago.com/checkout/preferences', {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer ACCESS_TOKEN', // Reemplaza ACCESS_TOKEN con tu token de acceso de Mercado Pago
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(preference)
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Redirige al usuario a la página de pago de Mercado Pago con la preferencia de pago recién creada
+            window.location.href = data.init_point;
+        })
+        .catch(error => {
+            console.error('Error al crear la preferencia de pago:', error);
+        });
+    });
 });
+
