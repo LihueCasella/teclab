@@ -65,4 +65,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cargar carrito desde el localStorage al cargar la página
     cargarCarritoDesdeLocalStorage();
+    
+const mp = new MercadoPago('YOUR_APP_USR-705b5d90-9931-4024-bfb8-74a7c1676008');
+const bricksBuilder = mp.bricks();
+
+mp.bricks().create("wallet", "wallet_container", {
+    initialization: {
+        preferenceId: "<PREFERENCE_ID>",
+    },
+ customization: {
+  texts: {
+   valueProp: 'smart_option',
+  },
+  },
+ });
+ 
+
 });
