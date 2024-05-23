@@ -116,7 +116,7 @@ nav ul li a {
 #carrito-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #8d8d8d;
   min-width: 220px;
   /* Ajustes del ancho del recuadro del ''carrito'' */
   z-index: 1;
