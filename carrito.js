@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         // Crea una preferencia de pago utilizando el SDK de Mercado Pago
-        fetch('https://api.mercadopago.com/checkout/preferences', {
+        fetch('https://sdk.mercadopago.com/js/v2', {
             method: 'POST',
             headers: {
                 'Authorization': 'Bearer APP_USR-2474841785568653-061519-6a1cdb7ba7bfe244c0abd5cf9f10d7fb-302241524', // Reemplaza ACCESS_TOKEN con tu token de acceso de Mercado Pago
