@@ -47,6 +47,7 @@ nav ul li a {
   border: none;
   background: none;
   cursor: pointer;
+  margin-right: 20px; /* Ajuste de margen */
 }
 
 .instagram-btn:hover {
@@ -65,8 +66,7 @@ nav ul li a {
   font-size: 18px;
   cursor: pointer;
   display: block;
-  margin: 20px auto;
-  /* Centro horizontal y espacio en la parte superior */
+  margin: 20px auto; /* Ajuste de margen para centrar */
   width: fit-content;
   /* Ajusta el ancho al contenido */
 }
@@ -190,7 +190,5 @@ nav ul li a {
 
 #carrito-dropdown-content button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  /* Sombreado al hacer hover */
+  /* Sombreado al hacer hoover*/
 }
-
-
