@@ -2,6 +2,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const botonVaciarCarrito = document.getElementById('vaciar-carrito');
     const listaCarrito = document.getElementById('lista-carrito');
     const total = document.getElementById('total');
+    const notification = document.createElement('div');
+    notification.className = 'notification hidden';
+    document.body.appendChild(notification);
+
+    // Función para mostrar la notificación
+    function mostrarNotificacion(mensaje) {
+        notification.textContent = mensaje;
+        notification.classList.remove('hidden');
+        setTimeout(function() {
+            notification.classList.add('hidden');
+        }, 3000);
+    }
 
     // Función para calcular el total
     function calcularTotal() {
@@ -27,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         listaCarrito.innerHTML = '';
         total.textContent = 'Total: $0.00';
         localStorage.removeItem('carrito');
+        mostrarNotificacion('El carrito ha sido vaciado');
     });
 
     // Evento para añadir un artículo al carrito
@@ -45,6 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Guardar carrito en el localStorage
             localStorage.setItem('carrito', listaCarrito.innerHTML);
+
+            mostrarNotificacion(nombre + ' ha sido añadido al carrito');
         });
     });
 
