@@ -1,3 +1,4 @@
+css:
 /* Estilos para el header */
 * {
   margin: 0;
@@ -57,6 +58,7 @@ nav ul li a {
 /* Estilos para el botón "Explorar Productos" */
 .dropbtn {
   background-color: #00d9ff;
+  /* Mismo color que el header */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -65,12 +67,14 @@ nav ul li a {
   font-size: 18px;
   cursor: pointer;
   display: block;
-  margin: 0 auto; /* Ajuste de margen para centrar */
+  margin: 20px auto; /* Ajuste de margen para centrar */
   width: fit-content;
+  /* Ajusta el ancho al contenido */
 }
 
 .dropbtn:hover {
   background-color: #008fb3;
+  /* Cambio de color al pasar el mouse */
 }
 
 /* Estilos para la lista desplegable */
@@ -83,6 +87,7 @@ nav ul li a {
   display: none;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
+  /* Fondo traslúcido */
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -114,16 +119,20 @@ nav ul li a {
   position: absolute;
   background-color: #8d8d8d;
   min-width: 220px;
+  /* Ajustes del ancho del recuadro del ''carrito'' */
   z-index: 1;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   right: 0;
+  /* Ajuste hacia la derecha */
 }
 
 .carrito-dropdown:hover #carrito-dropdown-content {
   display: block;
   right: 0;
+  /* Ajuste hacia la derecha */
   left: auto;
+  /* Ajuste a la posición inicial */
 }
 
 #lista-carrito {
@@ -134,12 +143,14 @@ nav ul li a {
 #lista-carrito li {
   margin-bottom: 10px;
   color: #000;
+  /* Color de texto negro */
 }
 
 #total {
   font-weight: bold;
   margin-top: 10px;
   color: #000;
+  /* Color de texto negro */
 }
 
 .carrito-buttons {
@@ -148,34 +159,40 @@ nav ul li a {
 
 #ver-carrito-btn {
   background-color: #00d9ff;
+  /* Color similar al del encabezado */
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: box-shadow 0.3s;
+  /* Animación de sombreado */
 }
 
 #ver-carrito-btn:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Sombreado al hacer hover */
 }
 
 /* Estilos para los botones dentro del contenido del carrito */
 #carrito-dropdown-content button {
   background-color: #00d9ff;
+  /* para que tenga color similar al del encabezado */
   color: #fff;
   padding: 8px 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: box-shadow 0.3s;
+  /* Animación de sombreado */
   margin-top: 10px;
+  /* Espaciado entre productos */
 }
 
 #carrito-dropdown-content button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Sombreado al hacer hoover*/
 }
-
 /* Estilos para el footer */
 footer {
   background-color: #333;
@@ -183,4 +200,3 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
-
