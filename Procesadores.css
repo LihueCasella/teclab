@@ -123,6 +123,7 @@
 .product img.procesador {
   width: 350px; /* Ancho recomendado para imagen del procesador */
 }
+
 /* Estilos para el footer */
 footer {
   background-color: #333;
@@ -172,4 +173,38 @@ footer {
 
 .dropdown:hover .dropbtn {
   background-color: #00d9ff;
+}
+
+/* Estilos para la notificación */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00d9ff; /* Mismo color que el header */
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#view-cart-btn {
+  background-color: #008fb3; /* Un tono más oscuro para el botón */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#view-cart-btn:hover {
+  background-color: #007b9e; /* Un poco más oscuro para el hover */
 }
