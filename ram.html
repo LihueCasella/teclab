@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memoria RAM - Tienda de Tecnología</title>
+  <link rel="stylesheet" href="ram.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1 class="logo">Tienda de Tecnología</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+      </nav>
+      <div class="carrito-dropdown">
+        <button id="ver-carrito-btn">Ver Carrito</button>
+        <div id="carrito-dropdown-content">
+          <h2>Carrito de Compras</h2>
+          <ul id="lista-carrito"></ul>
+          <p id="total">Total: $0.00</p>
+          <!-- Mostrar el total -->
+          <div class="carrito-buttons">
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+            <button id="ir-a-pagos">Ir a Pagos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="product">
+      <h2>Memoria RAM</h2>
+      <img src="recursos/ram.jpg" alt="Memoria RAM" class="ram" />
+      <p class="descripcion">
+        La memoria RAM (Random Access Memory) es un tipo de memoria volátil
+        que se utiliza como memoria de trabajo en computadoras y otros
+        dispositivos electrónicos. Es accesible de forma aleatoria, lo que
+        significa que se puede leer y escribir en cualquier ubicación de
+        memoria en igual tiempo. La RAM es fundamental para el rendimiento de
+        un sistema informático, ya que almacena temporalmente datos y
+        instrucciones utilizados por el procesador mientras se ejecutan los
+        programas.
+      </p>
+      <p>Precio: $80.00</p>
+      <button class="agregar-carrito-btn" data-nombre="Memoria RAM" data-precio="80.00">
+        Añadir al carrito
+      </button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Tienda de Tecnología. Todos los derechos reservados.</p>
+  </footer>
+  <!-- Contenedor de notificación -->
+  <div id="notification" class="notification hidden">
+    <p>Producto añadido al carrito exitosamente!</p>
+    <button id="view-cart-btn">Ver Carrito</button>
+  </div>
+  <script src="carrito.js"></script>
+</body>
+
+</html>
