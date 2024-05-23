@@ -192,3 +192,10 @@ nav ul li a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   /* Sombreado al hacer hoover*/
 }
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
