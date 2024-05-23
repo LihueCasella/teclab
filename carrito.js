@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('https://api.mercadopago.com/checkout/preferences', {
             method: 'POST',
             headers: {
-                'Authorization': 'Bearer ACCESS_TOKEN', // Reemplaza ACCESS_TOKEN con tu token de acceso de Mercado Pago
+                'Authorization': 'Bearer APP_USR-2474841785568653-061519-6a1cdb7ba7bfe244c0abd5cf9f10d7fb-302241524', // Reemplaza ACCESS_TOKEN con tu token de acceso de Mercado Pago
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(preference)
